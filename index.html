@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notas</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="video-background">
+      <video autoplay muted loop id="background-video">
+        <source src="media/Background4.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <h1 id="mis-notas">Mis notas</h1>
+        <!-- Botón de menú hamburguesa para móviles -->
+        <button class="hamburger-menu" id="hamburger-menu">
+          ☰
+        </button>
+        <div class="header-buttons" id="header-buttons">
+          <button class="new-note-button">Crear nota</button>
+          <button class="stats-button">Estadísticas</button>
+          <button class="stats-button" id="change-background">Cambiar fondo</button>
+        </div>
+      </div>
+
+      <!-- Popup -->
+      <div class="popup-container popup-container-closed">
+        <div>
+          <input
+            class="headingInput"
+            type="text"
+            placeholder="Título nota nueva"
+            maxlength="15"
+            required
+          />
+        </div>
+        <div>
+          <textarea
+            class="textInput"
+            cols="30"
+            rows="3"
+            placeholder="Contenido de tu nota"
+          ></textarea>
+        </div>
+        <div>
+          <select class="categoryInput">
+            <option value="Trabajo">Trabajo</option>
+            <option value="Estudios">Estudios</option>
+            <option value="Personal">Personal</option>
+            <option value="Otros">Otros</option>
+          </select>
+        </div>
+        <div class="popup-buttons">
+          <button class="addNoteBtn">Guardar</button>
+          <button class="closeBtn">Cerrar</button>
+        </div>
+      </div>
+
+      <!-- Modal del gráfico -->
+      <div id="chartModal" class="modal">
+        <div class="modal-content">
+          <span class="close-modal">&times;</span>
+          <h2>Estadísticas de Notas</h2>
+          <canvas id="notesChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Notes List -->
+      <div class="notes-container"></div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
