@@ -1,0 +1,70 @@
+site_name: Notes
+theme:
+  name: material
+  font:
+    text: Merriweather, sans-serif  # Puedes agregar una fuente de respaldo común
+    code: "Red Hat Mono, monospace"
+  palette:
+    # Modo claro
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: orange
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo oscuro
+    
+    # Modo oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: orange
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar a modo claro
+
+  features:
+    - dark-mode  # Habilita el modo oscuro
+    - navigation.footer  # Habilita el pie de página con navegación
+
+highlightjs: true
+hljs_style: github
+hljs_style_dark: monokai
+hljs_languages:
+  - python
+  - javascript
+  - html
+  - css
+  - bash
+  - yaml
+  - json
+  - markdown
+  - sql
+  - typescript
+  - cpp
+  - csharp
+  - java
+  - php
+  - xml
+
+markdown_extensions: 
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: _span
+      pygments_lang_class: true 
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/tu-perfil

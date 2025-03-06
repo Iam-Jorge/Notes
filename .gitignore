@@ -1,0 +1,29 @@
+# Ignorar los archivos generados por MkDocs
+/site/
+
+# Ignorar el entorno virtual si usas uno
+/venv/
+/env/
+
+# Ignorar archivos de configuración del editor o IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# Ignorar archivos de dependencias de Python
+*.pyc
+*.pyo
+__pycache__
+
+# Ignorar archivos temporales de editores de texto
+*.bak
+*.tmp
+
+# Ignorar archivos de caché generados por pip
+*.log
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Ignorar archivos de configuración locales
+.mkdocs.yml
