@@ -2,7 +2,7 @@ site_name: Notes
 theme:
   name: material
   font:
-    text: Merriweather, sans-serif  # Puedes agregar una fuente de respaldo común
+    text: Merriweather, sans-serif
     code: "Red Hat Mono, monospace"
   palette:
     # Modo claro
@@ -24,8 +24,7 @@ theme:
         name: Cambiar a modo claro
 
   features:
-    - dark-mode  # Habilita el modo oscuro
-    - navigation.footer  # Habilita el pie de página con navegación
+    - dark-mode
 
 highlightjs: true
 hljs_style: github
