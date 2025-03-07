@@ -2,6 +2,13 @@
 
 This repo uses GitHub Actions to automatically deploy documentation/notes created with MkDocs to GitHub Pages.
 
+
+## Live Notes
+
+The deployed version of this project is available at:
+**[https://iam-jorge.github.io/Notes/](https://iam-jorge.github.io/Notes/)**
+
+
 ## Workflow 
 
 The configuration file `.github/workflows/ci.yml` defines a workflow that is automatically triggered when pushing to the `master` or `main` branches.
