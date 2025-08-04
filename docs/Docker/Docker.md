@@ -2,7 +2,7 @@
 
 <div style="display: flex; align-items: center;">
     <div style="flex: 1;">
-        <img src="images/DockerLogo.png" alt="Logo CCN-CERT" width="200">
+        <img src="../images/DockerLogo.png" alt="Logo CCN-CERT" width="200">
     </div>
     <div style="flex: 2; padding-left: 20px; border-left: 3px solid #989898; padding-left: 20px;">
         <p><strong>Curso:</strong> Certificados Digitales<br>
